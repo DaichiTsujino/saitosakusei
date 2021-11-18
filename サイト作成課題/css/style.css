@@ -1,0 +1,298 @@
+@charset "utf-8";
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #4f260b;
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+body {
+    background-color: #ffebcd;
+}
+
+/* <ヘッダー箇所> */
+.header_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2.51%;
+    padding-left: 6.53%;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 10px 6.35% 0 2.51%;
+}
+
+.header_container h1 {
+    width: 226px;
+}
+.pc_nav ul {
+    display: flex;
+}
+
+.pc_nav li a {
+    color: #fff;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    width: 105px;
+    display: block;
+    text-align: center;
+}
+/* スライダー */
+.slider img {
+    width: 100%;
+}
+
+/* サイトのコンセプト */
+
+.ton {
+    text-align: center;
+    font-family: "游明朝";
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.zero {
+    font-size: 30px;
+    padding-top: 107px;
+    padding-bottom: 60px;
+}
+
+.one {
+    font-size: 82px;
+
+    line-height: 1.17;
+    padding-bottom: 20px;
+}
+
+.two {
+    font-size: 23px;
+    line-height: 1.65;
+    padding-bottom: 100px;
+}
+
+/* about us作成 */
+
+.nan {
+    display: flex;
+    font-family: "游明朝";
+    max-width: 1000px;
+    margin: 0 auto;
+    /* align-items: center; */
+}
+
+.ao img {
+    border-radius: 0 0 80px 0;
+    width: 700px;
+    height: 566px;
+}
+
+.sha {
+    /* text-align: center; */
+    padding-left: 8%;
+    width: 56%;
+}
+
+.about {
+    width: 273px;
+    height: 78px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* margin: 0 auto; */
+}
+
+.iti {
+    font-family: "游明朝";
+    font-size: 44px;
+    line-height: 1.38;
+    padding-bottom: 25px;
+}
+
+.ni {
+    /* font-family: "游明朝"; */
+    font-size: 16px;
+    line-height: 1.62;
+}
+
+/* メニュー */
+
+.tannyao {
+    text-align: center;
+    zoom: 0.5;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.pe {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 100px;
+    /* width: 30%; */
+}
+
+.pe img {
+    width: 300px;
+    height: 200px;
+    border-radius: 0 80px 0 0;
+}
+
+.pe h3 {
+    font-size: 38px;
+    color: red;
+    padding-left: 15px;
+    padding-bottom: 25px;
+    margin-top: -20px;
+}
+
+.pe p {
+    font-size: 17px;
+    max-width: 300px;
+    line-height: 1.23;
+}
+
+/* ギャラリー */
+
+.gallery_rogo {
+    text-align: center;
+    zoom: 0.5;
+    padding-bottom: 30px;
+}
+.gallery_photo img {
+    width: 384px;
+    height: 300px;
+}
+
+.gallery_photo {
+    display: flex;
+    width: 20%;
+}
+
+/* イベント */
+
+.event_rogo {
+    text-align: center;
+    zoom: 0.5;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.event_content {
+    max-width: 1000px;
+    border: black 3px solid;
+    margin: 0 auto;
+    height: 200px;
+    background-color: white;
+}
+
+.event_content ul {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.event_content li {
+    font-size: 23px;
+    line-height: 1.95;
+    text-align: left;
+    padding-left: 160px;
+    list-style: none;
+}
+
+.event_content span {
+    text-align: left;
+    padding-left: 40px;
+    text-decoration: black underline;
+}
+
+/* アクセス */
+
+.access_rogo {
+    text-align: center;
+    zoom: 0.5;
+    padding-top: 80px;
+    padding-bottom: 45px;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+}
+
+/* フッター */
+
+.start {
+    display: flex;
+    background-color: white;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 90px;
+    padding-left: 25%;
+}
+
+.footer {
+    zoom: 0.5;
+    align-items: center;
+}
+
+.footer_content p {
+    padding-left: 70px;
+    margin-top: -5px;
+    font-size: 20px;
+    line-height: 1.95;
+    text-align: left;
+}
+
+.last {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 85px;
+    margin-bottom: 80px;
+}
