@@ -91,7 +91,6 @@ body {
 
 .ton {
     text-align: center;
-    font-family: "游明朝";
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -121,6 +120,8 @@ body {
     display: flex;
     font-family: "游明朝";
     max-width: 1000px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin: 0 auto;
     /* align-items: center; */
 }
@@ -226,7 +227,10 @@ body {
 
 .event_content {
     max-width: 1000px;
+    box-sizing: border-box;
     border: black 3px solid;
+    padding-left: 10px;
+    padding-right: 10px;
     margin: 0 auto;
     height: 200px;
     background-color: white;
@@ -267,6 +271,10 @@ iframe {
 
 /* フッター */
 
+.open {
+    background: #fff;
+}
+
 .start {
     display: flex;
     background-color: white;
@@ -294,5 +302,86 @@ iframe {
     text-align: center;
     font-size: 16px;
     margin-top: 85px;
-    margin-bottom: 80px;
+    padding-bottom: 80px;
+}
+.sp_nav {
+    display: none;
+}
+.sp_menu_btn {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .pc_nav {
+        display: none;
+    }
+    .sp_menu_btn {
+        position: absolute;
+        top: 30px;
+        right: 10px;
+        display: block;
+        cursor: pointer;
+        z-index: 100;
+    }
+    .sp_menu_btn span {
+        background: #fff;
+        width: 33px;
+        height: 3px;
+        display: block;
+        position: relative;
+        transition: 0.3s;
+    }
+    .sp_menu_btn span::before,
+    .sp_menu_btn span::after {
+        content: "";
+        width: 33px;
+        height: 3px;
+        display: block;
+        background: #fff;
+        position: absolute;
+        transition: 0.3s;
+    }
+    .sp_menu_btn span::before {
+        bottom: 10px;
+    }
+    .sp_menu_btn span::after {
+        top: 10px;
+    }
+
+    .open span {
+        background: transparent;
+    }
+
+    .open span::before {
+        bottom: 0px;
+        transform: rotate(45deg);
+    }
+    .open span::after {
+        top: 0px;
+        transform: rotate(135deg);
+    }
+    .sp_nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+    }
+    .sp_nav ul {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .sp_nav a {
+        color: #fff;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+            "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+        font-size: 20px;
+        display: block;
+        padding: 20px 0;
+        text-align: center;
+    }
 }
