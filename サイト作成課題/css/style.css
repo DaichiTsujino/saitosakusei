@@ -127,7 +127,6 @@ body {
 
 .ao img {
     border-radius: 0 0 80px 0;
-    width: 100%;
 }
 
 .sha {
@@ -275,7 +274,8 @@ iframe {
     margin: 0 auto;
     text-align: center;
     padding-top: 90px;
-    /* padding-left: 25%; */
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .footer {
@@ -311,6 +311,14 @@ iframe {
     display: none;
 }
 .sp_menu_btn {
+    display: none;
+}
+
+.sp_two {
+    display: none;
+}
+
+.sp_about {
     display: none;
 }
 
@@ -386,5 +394,91 @@ iframe {
         display: block;
         padding: 20px 0;
         text-align: center;
+    }
+
+    /* サイトのコンセプト */
+
+    .zero {
+        font-size: 25px;
+    }
+
+    .one {
+        font-size: 70px;
+    }
+
+    .two {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .zero {
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+
+    .one {
+        font-size: 8.5vw;
+        margin-bottom: 20px;
+    }
+
+    .two {
+        font-size: 16px;
+        line-height: 1.875;
+    }
+
+    .sp_two {
+        display: block;
+    }
+
+    .nan {
+        display: block;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .sp_about {
+        display: block;
+        width: 160px;
+        margin: 0 auto;
+    }
+
+    .about {
+        display: none;
+    }
+
+    .iti {
+        font-size: 36px;
+        line-height: 1.25;
+        margin-bottom: 18px;
+    }
+
+    .ni {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+    .tannyao img {
+        width: 87.87px;
+        margin-bottom: 20px;
+    }
+
+    .pe {
+        display: block;
+    }
+
+    .box1 {
+        width: 100%;
+        margin: 50px;
+    }
+
+    .box2 {
+        width: 100%;
+        margin: 50px;
+    }
+
+    .box3 {
+        width: 100%;
+        margin: 50px;
     }
 }
