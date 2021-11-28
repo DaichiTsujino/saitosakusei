@@ -231,13 +231,14 @@ body {
 .event_content ul {
     padding-top: 40px;
     padding-bottom: 40px;
+    margin: 0 auto;
 }
 
 .event_content li {
     font-size: 23px;
     line-height: 1.95;
     text-align: left;
-    padding-left: 160px;
+    padding-left: 40px;
     list-style: none;
 }
 
@@ -412,6 +413,7 @@ iframe {
 }
 
 @media screen and (max-width: 767px) {
+    /* <!-- <サイトのコンセプト> --> */
     .zero {
         font-size: 17px;
         margin-bottom: 30px;
@@ -431,16 +433,23 @@ iframe {
         display: block;
     }
 
+    /* <!-- about usの作成 --> */
+
     .nan {
         display: block;
         padding-top: 30px;
         padding-bottom: 30px;
     }
 
+    .sha {
+        width: 100%;
+    }
+
     .sp_about {
         display: block;
         width: 160px;
         margin: 0 auto;
+        padding-bottom: 10px;
     }
 
     .about {
@@ -458,27 +467,101 @@ iframe {
         line-height: 1.75;
     }
 
+    /* <!-- メニュー --> */
+
     .tannyao img {
-        width: 87.87px;
-        margin-bottom: 20px;
+        /* width: 87.87px; */
+        /* margin-bottom: 20px; */
+        width: 160px;
     }
 
     .pe {
         display: block;
     }
 
+    .pe div {
+        width: 100%;
+        padding: 0.266%;
+    }
+
+    .pe p {
+        font-size: 17px;
+        line-height: 1.47;
+        font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+            "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E",
+            "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    }
+
+    .pe h3 {
+        font-size: 40px;
+    }
+
     .box1 {
         width: 100%;
-        margin: 50px;
+        margin-bottom: 50px;
     }
 
     .box2 {
         width: 100%;
-        margin: 50px;
+        margin-bottom: 50px;
     }
 
     .box3 {
         width: 100%;
-        margin: 50px;
+        margin-bottom: 0;
+    }
+
+    /* <!-- ギャラリー --> */
+
+    .gallery_rogo {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    /* <!-- イベント --> */
+
+    .event_rogo {
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .event_content {
+        padding-top: 20px 9.17%;
+        width: 100%;
+    }
+    .event_content ul {
+        margin: 0 auto;
+        max-width: 730px;
+    }
+
+    .event_content ul li {
+        font-size: 16px;
+    }
+
+    /* <!-- アクセス --> */
+
+    .access_rogo {
+        width: 225px;
+        margin: 0 auto;
+    }
+
+    .iframe {
+        width: 100%;
+        height: 191px;
+    }
+
+    /* フッター */
+
+    .start {
+        display: block;
+        padding: 40px 0;
+        text-align: left;
+    }
+
+    .start p {
+        text-align: left;
+    }
+    .last {
+        font-size: 16px;
     }
 }
